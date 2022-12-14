@@ -1,0 +1,63 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}  
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: ghostwhite
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+#navbar {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  border-right: 3px solid gray;
+  height: 100vh;
+}
+
+#navbar h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px 0;
+}
+
+#navbar li:last-of-type {
+  border-bottom: none;
+}
+#navbar li:first-of-type {
+  border-top: 2px solid gray;;
+}
+
+.nav-link{
+  text-align: left;
+  padding: 12px 25px;
+  border-bottom: 2px solid gray;
+  display: block;
+}
+.nav-link a {
+  color: gray;
+  text-decoration: none;
+}
+
+/* Main doc styles */
+
+#main-doc {
+  position: absolute;
+  left: 300px;
+  
+}
