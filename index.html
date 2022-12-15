@@ -16,8 +16,8 @@
       <li class="nav-link"><a href="#introductin">Introduction</a></li>
       <li class="nav-link"><a href="#know_already">What you should already know</a></li>
       <li class="nav-link"><a href="#javascript_and_java">JavaScript and Java</a></li>
-      <li class="nav-link"><a href="Hello_world">Hello World</a></li>
-      <li class="nav-link"><a href="#variable">Variables</a></li>
+      <li class="nav-link"><a href="#hello_world">Hello World</a></li>
+      <li class="nav-link"><a href="#variables">Variables</a></li>
       <li class="nav-link"><a href="#declaring_variables">Declaring variables</a></li>
       <li class="nav-link"><a href="#variable_scope">Variable scope</a></li>
       <li class="nav-link"><a href="#global_variables">Global Variables</a></li>
@@ -39,6 +39,74 @@
         <li>Sever-side JavaScript extends the core language by supplying objects relevant to running communication with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
       </ul>
     </section>
+    <section class="main-section" id="know_already">
+      <h1>What you should already know</h1>
+      <p>This guide assumes you have the following basic background:</p>
+      <ul>
+        <li>A general understanding of the internet and the World Wide Wen(WWW)</li>
+        <li>Good working knowledge of Hyper Text Markup langauge(HTML)</li>
+        <li>Some programming experience. If you are new to programmig, try one of the tutorials linked on the main page about JavaScript</li>
+      </ul>
+    </section>
+    <section class="main-section" id="javascript_and_java">
+      <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The javaScript language resemnles Java but does not have Java"s static typing and strong type checking. JavaScript follows most java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named from LiveScript to JavaScript.</p>
+      <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance, that is, what is inherited can vary for individaul objects. JavaScriptalso supports functions witout any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+      <p>JavaScript is a very free-form langauge compared to Java. You do not have to declare all variables, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+    </section>
+    <section class="main-section" id="hello_world">
+      <h1>Hello World</h1>
+      <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" Java Script code:</p>
+      <div id="codeblock">
+        <p>function greetMe(yourName) {alert("Hello" + yourName); }<span></span></p>
+        <p>greetMe("World");</p>
+      </div>
+      <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your brownser!</p>
+    </section>
+    <section class="main-section" id="variables">
+      <h1>Variables</h1>
+      <p>You use variables as ymbolic names for values in yout application. The names of variables, called identifiers, conform to certain rules.</p>
+      <p>A JavaScript identifier must start with a letter, underscrore (_), or dollar sign ($); subsequent characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+      <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+    </section>
+    <section class="main-section" id="declaring_variables">
+      <p>You can declare a variable in three ways:</p>
+      <p>With the keyword var. For example,</p>
+      <div id="codeblock">
+        <p>var x = 42.</p>
+      </div>
+      <p>This syntax can be used to declare both local and global variables.</p>
+      <p>By simply assigning it value. Fot example,</p>
+      <div id="codeblock">
+        <p>x = 42.</p>
+      </div>
+      <p>This always declares a global variable. It generates a stricts JavaScript warning. YOu shouldn't use this variant.</p>
+      <p>With the keyword let. For example,</p>
+      <div id="codeblock">
+        <p>let y = 13.</p>
+      </div>
+      <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+    </section>
+    <section class="main-section" id="variable_scope">
+      <p>When you declare a variable outside of any function, it is called a glabal variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+
+      <p>JavaScript before ECMASCRIPT 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For within which x is declared, not the block, which in this case is an if statement.</p>
+      
+      <div id="codeblock">
+        <p>if (true) { var x = 5} console.log(x); // 5</p>
+      </div>
+      <p>This behavior changes, when using the let declaration introduced in ECMASript 2015.</p>
+      <div id="codeblock">
+        <p> if (true) { let y = 5; } console.log(y) // ReferenceError: y is</p>
+        <p>not defined</p>
+      </div>
+    </section>
+    <section class="main-section" id="global_variables">
+      <h1>Global variables</h1>
+      <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+
+      <p>Consequently, you can access global variables declared in oe window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber</p>
+    </section>
+    <section class="main-section"></section>
     <section class="main-section"></section>
     <section class="main-section"></section>
     <section class="main-section"></section>
