@@ -13,7 +13,6 @@ html,
 ::before {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: ghostwhite
 }
 body {
   margin: 0;
@@ -24,16 +23,11 @@ h1,
 h2,
 h3 {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 20px 0;
+  font-family: sans-serif;
 }
 
-p,
-li,
-a {
-  color: rgb(128, 128, 128);
-  line-height: 2;
-}
 /* Header styles */
 #navbar {
   width: 300px;
@@ -76,10 +70,49 @@ p {
   padding-bottom: 20px;
 }
 
-ul{
+#main-doc ul{
   padding-left: 50px;
 }
 
-ul li {
+#main-doc li {
   padding-bottom: 20px;
+}
+
+p,
+#main-doc li{
+  color: rgb(128, 128, 128);
+  line-height: 2;
+}
+
+#codeblock {
+  background-color: rgba(211, 211, 211, 0.237);
+  padding: 10px 0 10px 15px;
+  border-radius: 2px;
+}
+
+#codeblock p {
+  padding-bottom: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* Responsive style */
+
+@media only screen and (max-width: 800px){
+  #navbar {
+    position: absolute;
+    width: 100%;
+    top: 0; 
+  }
+
+  #navbar ul {
+    height: 220px;
+    overflow: scroll;
+    border-bottom: 2px solid gray;
+  }
+  #main-doc {
+    position: relative;
+    top: 280px;
+    left: 0;
+  }
 }
